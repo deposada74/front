@@ -1,0 +1,35 @@
+<section id="header">
+    <!-- Sección del encabezado de la página -->
+    <a href="/"><img src="img/late.png" class="logo" alt=""></a>
+    <div>
+        <ul id="navbar">
+            <!-- Elementos del menú de navegación -->
+            <li><a href="/" class=<%=activo==1 ? "active" : '' %>>Inicio</a></li>
+            <li><a href="/hombre" class=<%=activo==2 ? "active" :'' %>>Hombre</a></li>
+            <li><a href="/mujer" class=<%=activo==3 ? "active" :'' %>>Mujer</a></li>
+            <li><a href="/nino" class=<%=activo==4 ? "active" : '' %>>Niño</a></li>
+            <li><a href="/nina" class=<%=activo==5 ? "active" : '' %>>Niña</a></li>
+            <li><a id="modal-link" href="#">Quiénes somos</a></li>
+            <li><a href="/auth/google"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+</section>
+
+<div class="content">
+    <!-- Modal de "Quiénes somos" -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Quiénes somos</h3>
+            <p>Sobre Nosotros</p>
+            <p>Somos una tienda en línea especializada en moda y accesorios para hombres y mujeres.</p>
+            <p>Nos apasiona ofrecer productos de alta calidad y diseño exclusivo que reflejen la personalidad y el estilo de
+                nuestros clientes.</p> 
+                <p>satisfacción de nuestros clientes.</p>
+                <div>MEDELLIN / ANTIOQUIA</div>
+                <div>CELULAR: 301-786-5590</div>
+                <div>DIRECCION: CARRERA 86 A #77 BB-11</div>
+            </p>
+        </div>
+    </div>
+</div>
