@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include("./partials/head.ejs", {'titulo':'niño'}); %>
-
-
-
+   <%- include("./partials/head.ejs", {'titulo':'niño'}); %>
    <%- include("./partials/menu.ejs", {'activo' : 4}); %>
 
       <!-- BANNER CON TITULO Y FOTO -->
       <section id="page-header">
-         <h2>NIÑO</h2>
+         <h2>Niño</h2>
          <p>En todas las tallas</p>
       </section>
       <!-- FIN BANNER CON TITULO Y FOTO -->
 
 
-      <!-- CONTENEDOR DE PRODUCTOS -->
+      <!-- CONTENEDOR DE PRODUCTOS DINAMICO-->
       <section class="contenedor mas-productos">
          <div class="contenedor-productos">
             <% datos.forEach((element)=> {
@@ -46,13 +43,12 @@
 
          </div>
       </section>
-
       <!-- PROMOCION -->
       <section id="prom-banner" class="section-m1">
          <h4>PROXIMAMENTE </h4>
          <h2>HAZ PARTE DEL EQUIPO <span> SUBE, PUBLICITA Y VENDE</span> CON NOSOTROS</h2>
-     </section>
-     <!-- PROMOCION -->
+      </section>
+      <!-- PROMOCION -->
 
       <!-- INFO DE PAGINA -->
       <section class="container container-features">
@@ -107,7 +103,11 @@
          <!-- end footer -->
          <!-- Javascript files-->
 
-         
+         <script src="js/modal-page.js"></script>
+         <script src="js/img-light-page.js"></script>
+         <script type="module"
+            src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+         </body>
          </body>
 
 </html>

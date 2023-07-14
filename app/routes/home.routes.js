@@ -45,7 +45,7 @@ route.get('/mujer', async (req, res) => {
     const data = await response.json();
     datos = data;
 
-    // Renderizar la vista HTML mujer.ejs, pasando los datos como objeto
+    // Renderizar la vista HTML hombre.ejs, pasando los datos como objeto
     res.render("mujer", {
         "datos": datos
     })
@@ -68,12 +68,11 @@ route.get('/nino', async (req, res) => {
     const data = await response.json();
     datos = data;
 
-    // Renderizar la vista HTML nino.ejs, pasando los datos como objeto
+    // Renderizar la vista HTML hombre.ejs, pasando los datos como objeto
     res.render("nino", {
         "datos": datos
     })
 });
-
 // Definir la ruta HTTP GET /nina
 route.get('/nina', async (req, res) => {
     // Definir la ruta de la API REST a la que se hace la solicitud HTTP
@@ -91,12 +90,7 @@ route.get('/nina', async (req, res) => {
     const data = await response.json();
     datos = data;
 
-    // Iterar sobre los objetos ropa en los datos
-    datos.forEach((ropa) => {
-        ropa.enlace
-    })
-
-    // Renderizar la vista HTML nina.ejs, pasando los datos como objeto
+    // Renderizar la vista HTML hombre.ejs, pasando los datos como objeto
     res.render("nina", {
         "datos": datos
     })
@@ -119,7 +113,7 @@ route.get('/', async (req, res) => {
     const data = await response.json();
     datos = data;
 
-    // Renderizar la vista HTML index.ejs, pasando los datos como objeto
+    // Renderizar la vista HTML hombre.ejs, pasando los datos como objeto
     res.render("index", {
         "datos": datos
     })
